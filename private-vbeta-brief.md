@@ -62,15 +62,15 @@ query
 
 A useful search result should therefore be able to answer questions such as:
 
-What is this?  
-Who published or transferred it?  
-What identifiers does the source give it?  
-Is this a record, a representation, a metadata description, or merely a locator?  
-Are there other known versions or releases?  
-What source evidence supports the displayed title, date, relationship, or identifier?  
-Has the source changed?  
-Was the record actually acquired, merely discovered, or only referenced by another source?  
-Why did this result match my search?
+- What is this?  
+- Who published or transferred it?  
+- What identifiers does the source give it?  
+- Is this a record, a representation, a metadata description, or merely a locator?  
+- Are there other known versions or releases?  
+- What source evidence supports the displayed title, date, relationship, or identifier?  
+- Has the source changed?  
+- Was the record actually acquired, merely discovered, or only referenced by another source?  
+- Why did this result match my search?
 
 This distinction becomes especially important when two archives contain closely related material. The Observatory should not flatten them into one item merely because their titles look alike.
 
@@ -84,14 +84,14 @@ The same principle applies to topics and programs across government. A research 
 
 The system is intended to distinguish among situations such as:
 
-exact same bytes;  
-the same provider-assigned record identity;  
-different representations of one source record;  
-different releases or redaction states;  
-a later republication;  
-membership in the same collection;  
-records about the same person, event, program, organization, law, or subject;  
-a suspected relationship that has not been established strongly enough to become canonical identity.
+- exact same bytes;  
+- the same provider-assigned record identity;  
+- different representations of one source record;  
+- different releases or redaction states;  
+- a later republication;  
+- membership in the same collection;  
+- records about the same person, event, program, organization, law, or subject;  
+- a suspected relationship that has not been established strongly enough to become canonical identity.
 
 This makes possible a class of research experience that is difficult on ordinary archive sites.
 
@@ -146,12 +146,12 @@ That can include source metadata, retrieved payloads, provider identifiers, retr
 
 The system also tries to preserve distinctions that conventional search interfaces often erase.
 
-A missing result does not necessarily mean a record does not exist.  
-A failed retrieval does not mean a source withdrew a record.  
-A filename does not automatically establish record identity.  
-Two similar titles do not establish equivalence.  
-A provider-supplied description remains a provider assertion.  
-A model-generated interpretation is not promoted into source truth merely because it sounds plausible.
+- A missing result does not necessarily mean a record does not exist.  
+- A failed retrieval does not mean a source withdrew a record.  
+- A filename does not automatically establish record identity.  
+- Two similar titles do not establish equivalence.  
+- A provider-supplied description remains a provider assertion.  
+- A model-generated interpretation is not promoted into source truth merely because it sounds plausible.
 
 This matters particularly in controversial research domains. The platform should remain useful to a skeptic, a believer, a journalist, a scientist, an archivist, and a software engineer even when those people disagree strongly about the underlying subject matter.
 
@@ -242,12 +242,12 @@ Internally, the project treats discovery work as something that should be classi
 
 Different kinds of work have different characteristics.
 
-Some requests are interactive and should return quickly.  
-Some are bulk archival scans that can run slowly in the background.  
-Some depend on an external provider’s rate limits.  
-Some may require expensive document processing.  
-Some are maintenance or refresh tasks.  
-Some may originate from public demand, registered researchers, operators, or internal coverage analysis.
+- Some requests are interactive and should return quickly.  
+- Some are bulk archival scans that can run slowly in the background.  
+- Some depend on an external provider’s rate limits.  
+- Some may require expensive document processing.  
+- Some are maintenance or refresh tasks.  
+- Some may originate from public demand, registered researchers, operators, or internal coverage analysis.
 
 The mature dispatcher is intended to consider where work came from, what it is trying to accomplish, what bounds apply, and what resources it should receive.
 
@@ -266,12 +266,12 @@ The current development direction also anticipates testing new dispatch policy a
 
 A draft policy could be replayed against prior dispatch inputs to answer:
 
-How many decisions would change?  
-Would more work be admitted?  
-Would some requests be deferred?  
-Would priorities change?  
-Would a particular provider receive substantially more traffic?  
-Would background work risk starvation?
+- How many decisions would change?  
+- Would more work be admitted?  
+- Would some requests be deferred?  
+- Would priorities change?  
+- Would a particular provider receive substantially more traffic?  
+- Would background work risk starvation?
 
 This same evaluation approach can later be used when introducing new adapters or worker logic. Candidate code can be run against preserved historical inputs or in shadow mode, allowing developers to compare what it would have done without granting it authority to alter canonical evidence.
 
@@ -338,11 +338,11 @@ The objective is expertise, not endorsements.
 
 A healthy advisory relationship is one where a professional can say:
 
-you are modeling this archive incorrectly;  
-this relationship is stronger than the evidence supports;  
-this interface implies more certainty than the underlying source warrants;  
-researchers need a better citation trail here;  
-this search behavior is hiding an important class of records.
+- you are modeling this archive incorrectly;  
+- this relationship is stronger than the evidence supports;  
+- this interface implies more certainty than the underlying source warrants;  
+- researchers need a better citation trail here;  
+- this search behavior is hiding an important class of records.
 
 That kind of criticism is useful.
 
@@ -352,14 +352,14 @@ The private beta is intentionally not being limited to people who already share 
 
 Different testers expose different failure modes.
 
-A developer may notice that the product is hiding important system state.  
-A journalist may immediately see that a citation trail is insufficient.  
-An archivist may notice that a collection hierarchy is being misrepresented.  
-A scientist may object to how uncertainty is communicated.  
-A skeptic may identify where the interface accidentally encourages an inference not supported by the source.  
-A believer may recognize records, terminology, or relationships that the initial corpus missed.  
-A researcher may reveal that the system’s navigation does not match how real investigations unfold.  
-A podcaster or communicator may expose where the product is too technical for a serious general audience.
+- A developer may notice that the product is hiding important system state.  
+- A journalist may immediately see that a citation trail is insufficient.  
+- An archivist may notice that a collection hierarchy is being misrepresented.  
+- A scientist may object to how uncertainty is communicated.  
+- A skeptic may identify where the interface accidentally encourages an inference not supported by the source.  
+- A believer may recognize records, terminology, or relationships that the initial corpus missed.  
+- A researcher may reveal that the system’s navigation does not match how real investigations unfold.  
+- A podcaster or communicator may expose where the product is too technical for a serious general audience.
 
 The goal is not consensus.
 
@@ -390,15 +390,15 @@ The project is aiming for something more durable than a topical search site.
 
 A useful shorthand is:
 
-Preserve identity.  
-Preserve provenance.  
-Preserve history.  
-Expose uncertainty.  
-Keep source evidence inspectable.  
-Do not silently turn absence into deletion.  
-Do not silently turn similarity into identity.  
-Do not silently turn model output into truth.  
-Let public research demand inform discovery without giving it uncontrolled execution authority.
+- Preserve identity.  
+- Preserve provenance.  
+- Preserve history.  
+- Expose uncertainty.  
+- Keep source evidence inspectable.  
+- Do not silently turn absence into deletion.  
+- Do not silently turn similarity into identity.  
+- Do not silently turn model output into truth.  
+- Let public research demand inform discovery without giving it uncontrolled execution authority.
 
 If the beta succeeds, the result should feel less like searching a folder of PDFs and more like exploring an evidence-backed map of public records.
 
